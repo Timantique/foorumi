@@ -10,9 +10,9 @@
 <body>
     <header>
         <div class="navbar">
-            <nav class="navigation hide">
+            <nav class="navigation hide" id="navigation">
                 <ul class="nav-list">
-                    <span class="close-icon"><i class="material-symbols-outlined">close</i>
+                    <span class="close-icon" onclick="showIconbar()"><i class="material-symbols-outlined">close</i>
                     <li class="nav-item">
                         <a href="#">Koti</a>
                     </li>
@@ -24,23 +24,37 @@
                         </li>
                 </ul>
             </nav>
-            <a href="" class="bar-icon"><i class="material-symbols-outlined">menu</i></a>
-                <div class="brand">Tulevaisuuden Foorumi</div>
-        </div>       
+            <a href="#" class="bar-icon" id="iconBar" onclick="hideIconBar()"><i class="material-symbols-outlined">menu</i></a>
+                <div class="brand">Foorumi</div>
+        </div> 
+        <!--"Etsi" laatikko-->
+
+        <div class="search-box">
+            <div>
+                <select name="" id="">
+                    <option value="everything">Kaikki</option>
+                    <option value="titles">Otsikko</option>
+                    <option value="description">Kuvaus</option>
+                </select>
+                <input type="text" name="q" id="" placeholder="Etsi...">
+                <button> <i class="material-symbols-outlined">search</i></button>
+            </div>
+        </div>
+
     </header>
 
   <div class="container">
         <div class="subforum">
             <div class="subforum-title">
-                <h1>Koko helahoidon nimi</h1>
+                <h1>Tärkeät Tiedotteet</h1>
             </div>
             <div class="subforum-row">
                 <div class="subforum-icon subforum-column center">
                     <i class="material-symbols-outlined">mail</i>
                     </div>
                     <div class="subforum-description subforum-column">
-                        <h1><a href="">Tähän tulee otsikko</a></h1>
-                        <p>Täydentävä tai ohjaava teksti otsikolle</p>
+                        <h1><a href="">Salaisuuksien kammio</a></h1>
+                        <p>Salaisuudet</p>
                     </div>
                     <div class="subforum-stats subforum-column center">
                         <span>24 kirjoitusta | 15 Aihetta </span>
@@ -160,6 +174,24 @@
         </div> 
  </div>
     
+<!--foorumin infoa-->
+ <div class="forum-info">
+    <div class="chart">
+        Foorumi - Statistiikka &nbsp;<i class="material-symbols-outlined">monitoring</i>
+    </div>
+    <div>
+        <span><u>666</u> kirjoitusta <u>69</u> aihealueella <u>96</u> käyttäjän toimesta.</span><br>
+        <span>Viimeisin kirjoitus: <b><a href="#">Satunnainen Kirjoitus </a></b>06.09.2069 <a href="#">Satunnaiselta käyttäjältä.</a></span>
+    </div>
+ </div>
+
+
+<footer>
+    <span>&copy; &nbsp;GigaChad Alpha. Omistan kaikki oikeudet tähä sivuun</span>
+</footer>
+
+
+
     <script src="main.js"></script>
 </body>
 </html>

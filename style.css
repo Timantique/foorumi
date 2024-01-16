@@ -5,12 +5,12 @@
 
 html{
     font-size: 14px;
-    background-color: rgb(235, 208, 168);
-    color: #1F305E;
+    background-color: rgb(0, 0, 0);
+    color: #ced5e9;
 }
 
 a{
-    color: #1560bd;
+    color: #d3dae2;
     font-weight: bolder;
     text-decoration: none;
 }
@@ -34,7 +34,7 @@ h1{
 }
 
 .subforum-title{
-    background-color: rgb(240, 234, 229);
+    background-color: rgb(53, 54, 54);
     padding:5px;
     border-radius: 5px;
     margin: 4px;
@@ -53,7 +53,7 @@ h1{
     padding: 10px;
     margin: 4px;
     border-radius: 5px;
-    background-color: rgb(240, 227, 208);
+    background-color: rgb(74, 74, 77);
 
 }
 
@@ -137,7 +137,7 @@ header{
 }
 
 .navigation{
-    background-color: rgb(184, 197, 197);
+    background-color: rgb(48, 108, 148);
     padding: 10px;
     width: 65%;
     display: inline-block;
@@ -159,7 +159,7 @@ header{
     margin-inline: 20px;
     font-size: 20px;
     padding: 10px;
-    color: white;
+    color: rgb(255, 255, 255);
 
 }
 
@@ -181,7 +181,7 @@ header{
     font-size: 60px;
     display: inline-block;
     margin-right: 10px;
-    color: white;
+    color: rgb(48, 108, 148);
     cursor: pointer
 }
 
@@ -189,4 +189,96 @@ header{
     font-size: 60px;
     display: inline-block;
     
+}
+
+/*navbar luurille*/
+@media screen and (max-width: 460px){
+    .navigation{
+        max-height: auto;
+        
+    }
+    
+    
+    
+    .nav-item a{
+        float: left;
+        display: inline;
+        text-align: center;
+        margin-inline: 3px;
+        font-size: 10px;
+        padding: 5px;
+    
+    }
+    
+    .close-icon i{
+        font-size: 30px;
+        
+    }
+    
+    
+    .brand{
+        font-size: 20px;
+        
+    }
+
+}
+
+/* haku laatikko */
+
+.search-box{
+    border:solid 1px rgb(148, 48, 48);
+    margin-top: 20px;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 1px 2px 3px rgb(148, 48, 48)
+}
+
+.search-box select{
+    padding: 10px;
+}
+
+.search-box input{
+    padding: 10px;
+}
+
+.search-box button{
+    padding: 10px;
+    background-color: white;
+    color: black;
+}
+
+.search-box button.hover{
+    background-color: black;
+    color: white;
+    box-shadow: 1px 2px 3px white;
+}
+
+/* "etsi" laatikko luurille */
+
+@media screen and (max-width: 460px){
+    .search-box input, .search-box button, .search-box select{
+        min-width: 300px;
+        margin-top: 5px;
+    }
+    
+}
+
+/* foorumi info */
+.forum-info{
+    pad: 20px;
+    background-color: black;
+}
+
+.chart{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+footer{
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgb(29, 22, 119);
+    display: block;
+    text-align: center;
 }
