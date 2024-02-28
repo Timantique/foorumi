@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etusivu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <nav class="navigation hide" id="navigation">
+                <ul class="nav-list">
+                    <span class="close-icon" onclick="showIconbar()"><i class="material-symbols-outlined">close</i>
+                    <li class="nav-item">
+                        <a href="#">Koti</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Foorumi</a>
+                    </li>
+                        <li class="nav-item">
+                            <a href="#">Tietoja</a>
+                        </li>
+                </ul>
+            </nav>
+            <a href="#" class="bar-icon" id="iconBar" onclick="hideIconBar()"><i class="material-symbols-outlined">menu</i></a>
+                <div class="brand">Foorumi</div>
+        </div> 
+        <!--"Etsi" laatikko-->
+
+        <div class="search-box">
+            <div>
+                <select name="" id="">
+                    <option value="everything">Kaikki</option>
+                    <option value="titles">Otsikko</option>
+                    <option value="description">Kuvaus</option>
+                </select>
+                <input type="text" name="q" id="" placeholder="Etsi...">
+                <button> <i class="material-symbols-outlined">search</i></button>
+            </div>
+        </div>
+
+    </header>
+
+<div class="container">
+
+    <div class="posts-table">
+        <div class="table-head">
+            <div class="status">Status</div>
+            <div class="subjects">Subjects</div>
+            <div class="replies">Replies/Views</div>
+            <div class="last-reply">Last Reply</div>
+        </div>
+        <div class="table-row">
+            <div class="status"><i class="material-symbols-outlined">emergency_heat</i></div>
+                <div class="subjects"><a href="#"> Pythonin opettelua</a></div>
+                <br>
+                <span>Started by <b><a href="#">user</a></b>.</span>
+        </div>
+        <div class="replies">
+            2 replies <br> 124 views
+        </div>
+        <div class="last-reply">
+            tammikuu 12 2025
+            <br>
+            by <b><a href="#">käyttäjä</a></b>
+        </div>
+    </div>
+</div>
+
+
+<footer>
+    <span>&copy; &nbsp;GigaChad Alpha. Omistan kaikki oikeudet tähä sivuun</span>
+</footer>
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
